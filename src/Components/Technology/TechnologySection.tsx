@@ -1,3 +1,4 @@
+ 
 import { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -5,9 +6,7 @@ import technologies from "../../Data/technology.json";
 import TechnologyCard from "./TechnologyCard";
 import YourStack from "./YourStack";
 
-
- 
- type Technology = {
+type Technology = {
   id: string;
   name: string;
   category: string;
@@ -19,11 +18,9 @@ import YourStack from "./YourStack";
 };
 
 const TechnologySection = () => {
-
   const [stack, setStack] = useState<Technology[]>([]);
 
   const handleAdd = (technology: Technology) => {
-
     const alreadyExists = stack.some(
       (item) => item.id === technology.id
     );
@@ -37,9 +34,7 @@ const TechnologySection = () => {
 
     setStack([...stack, technology]);
 
-    toast.success(
-      `${technology.name} added to your stack!`
-    );
+    toast.success(`${technology.name} added to your stack!`);
   };
 
   const handleRemove = (id: string) => {
@@ -63,10 +58,9 @@ const TechnologySection = () => {
 
         {/* Heading */}
         <div className="mb-8">
-
           <h2 className="text-3xl font-extrabold text-gray-900">
             Explore the{" "}
-            <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">
               Technologies
             </span>
           </h2>
@@ -74,15 +68,13 @@ const TechnologySection = () => {
           <p className="mt-1 text-xs text-gray-400">
             Pick one technology per category to build your ideal stack.
           </p>
-
         </div>
 
         {/* Main Layout */}
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-4">
 
-          {/* Cards */}
+          {/* Technology Cards */}
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-3 lg:grid-cols-3">
-
             {technologies.map((technology) => (
               <TechnologyCard
                 key={technology.id}
@@ -93,10 +85,9 @@ const TechnologySection = () => {
                 )}
               />
             ))}
-
           </div>
 
-          {/* Sidebar */}
+          {/* Your Stack */}
           <YourStack
             stack={stack}
             onRemove={handleRemove}
@@ -104,10 +95,10 @@ const TechnologySection = () => {
           />
 
         </div>
-
       </div>
     </section>
   );
 };
 
 export default TechnologySection;
+

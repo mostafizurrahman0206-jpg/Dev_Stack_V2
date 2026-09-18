@@ -1,46 +1,4 @@
-//  import heroImg from '../../assets/banner-stack.png' 
-
-
-
-// const HeroSection = () => {
-//   return (
-//     <section className="bg-hero  bg-white-100 py-20 text-black min-h-screen" style={{ backgroundImage: `url(${heroImg})` }}  
-//     >
-//         {/* Contents */}
-//         <div>   
-//           <h1>Build Your Ideal
-//            Development Stack </h1>
-//            <p> Explore frontend, backend, database, and tooling options,
-//             compare them side by side, and put together the stack that fits your
-//              next project.</p>
-//         </div>
-
-
-//       <div  >
-//         <h1> hellow </h1>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default HeroSection;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import heroImg from "../../assets/banner-stack.png";
+ import heroImg from "../../assets/banner-stack.png";
 
 const HeroSection = () => {
   return (
