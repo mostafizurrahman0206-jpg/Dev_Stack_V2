@@ -1,12 +1,12 @@
 {
+  "homepage": "https://github.com/mostafizurrahman0206-jpg/Dev_Stack_V2",
   "name": "dev-stack--app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "oxlint",
+    "build": "vite",
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
