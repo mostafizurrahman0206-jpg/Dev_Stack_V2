@@ -1,16 +1,15 @@
 {
-  "homepage": "https://github.com/mostafizurrahman0206-jpg/Dev_Stack_V2",
+  "homepage": "https://mostafizurrahman0206-jpg.github.io/Dev_Stack_V2/",
   "name": "dev-stack--app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
